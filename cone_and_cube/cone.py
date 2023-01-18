@@ -63,6 +63,7 @@ class ColorMeter(object):
                                 (0, 255, 0),  # color
                                 2,  # border
                             )
+							
         if self.is_show:
             cv2.line(frame, (widthMid, 0), (widthMid, height), (58, 30, 196), 2)
             cv2.line(frame, (0, heightMid), (width, heightMid), (58, 30, 196), 2)
