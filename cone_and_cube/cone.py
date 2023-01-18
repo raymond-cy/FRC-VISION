@@ -13,13 +13,11 @@ leftheight = (heightMid, 0)
 rightheight = (heightMid, width)
 
 class ColorMeter(object):
-    
     color_hsv = {
         # We put HSV format of color here. 
         "cone": [np.array([11, 115, 70]), np.array([34, 255, 245])],
         "cube": [np.array([100, 43, 46]), np.array([155, 255, 255])],
     }
-
     def __init__(self, is_show=False):
         self.is_show = is_show
         self.img_shape = None
@@ -72,7 +70,6 @@ class ColorMeter(object):
             cv2.waitKey(1)
         # cv2.destroyAllWindows()
         return res
-
 
 if __name__ == "__main__":
     m = ColorMeter(is_show=True)
